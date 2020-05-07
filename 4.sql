@@ -64,8 +64,3 @@ SELECT name, continent, population FROM world x
 SELECT name, continent FROM world x
   WHERE population > ALL (SELECT population * 3 FROM world y 
   WHERE y.continent = x.continent AND x.name <> y.name)
-
-
-
-
-
