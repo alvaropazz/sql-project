@@ -1,83 +1,147 @@
-/* SELECT names */
+    /* SELECT
+        names */  
+        
+    /*1*/  
+    
+    SELECT
+            name 
+        FROM
+            world   
+        WHERE
+            name LIKE 'Y%';
 
-/*1*/
+    /*2*/  
+    
+    SELECT
+        name 
+    FROM
+        world   
+    WHERE
+        name LIKE '%y';
 
-SELECT name FROM world
-  WHERE name LIKE 'Y%';
+    /*3*/  
+    
+    SELECT
+        name 
+    FROM
+        world   
+    WHERE
+        name LIKE '%x%';
 
-/*2*/
+    /*4*/  
+    
+    SELECT
+        name 
+    FROM
+        world   
+    WHERE
+        name LIKE '%x%';
 
-SELECT name FROM world
-  WHERE name LIKE '%y';
+    /*5*/  
+    
+    SELECT
+        name 
+    FROM
+        world   
+    WHERE
+        name LIKE 'C%' 
+        AND name LIKE '%ia';
 
-/*3*/
+    /*6*/  
+    
+    SELECT
+        name 
+    FROM
+        world   
+    WHERE
+        name LIKE '%oo%';
 
-SELECT name FROM world
-  WHERE name LIKE '%x%';
+    /*7*/  
+    
+    SELECT
+        name 
+    FROM
+        world   
+    WHERE
+        name LIKE '%a%a%a%'  
 
-/*4*/
+    /*8*/  
+    
+    SELECT
+            name 
+        FROM
+            world  
+        WHERE
+            name LIKE '_t%' 
+        ORDER BY
+            name;
 
-SELECT name FROM world
-  WHERE name LIKE '%x%';
+    /*9*/  
+    
+    SELECT
+        name 
+    FROM
+        world  
+    WHERE
+        name LIKE '%o__o%';
 
-/*5*/
+    /*10*/  
+    
+    SELECT
+        name 
+    FROM
+        world  
+    WHERE
+        name LIKE '____';
 
-SELECT name FROM world
-  WHERE name LIKE 'C%' AND name LIKE '%ia';
-
-/*6*/
-
-SELECT name FROM world
-  WHERE name LIKE '%oo%';
-
-/*7*/
-
-SELECT name FROM world
-  WHERE name LIKE '%a%a%a%'
-
-/*8*/
-
-SELECT name FROM world
- WHERE name LIKE '_t%'
-ORDER BY name;
-
-/*9*/
-
-SELECT name FROM world
- WHERE name LIKE '%o__o%';
-
-/*10*/
-
-SELECT name FROM world
- WHERE name LIKE '____';
-
-/*11*/
-
-SELECT name
-  FROM world
- WHERE name = capital;
-
-/*12*/
-
-SELECT name
-  FROM world
- WHERE capital LIKE concat(name, '%City%');
-
-/*13*/
-
-SELECT capital, name
-  FROM world
- WHERE capital LIKE concat( '%', name, '%');
-
-/*14*/
-
-SELECT capital, name
-  FROM world
- WHERE capital LIKE concat(name, '%') AND capital != name;
-
-/*15*/
-
-SELECT name, 
-  REPLACE (capital, name, '') AS ext
-  FROM world 
-  WHERE capital LIKE concat(name, '%%') AND capital != name;
+    /*11*/  
+    
+    SELECT
+        name   
+    FROM
+        world  
+    WHERE
+        name = capital;
+    
+    /*12*/  
+    
+    SELECT
+        name   
+    FROM
+        world  
+    WHERE
+        capital LIKE concat(name, '%City%');
+    
+    /*13*/  
+    
+    SELECT
+        capital,
+        name   
+    FROM
+        world  
+    WHERE
+        capital LIKE concat( '%', name, '%');
+    
+    /*14*/  
+    
+    SELECT
+        capital,
+        name   
+    FROM
+        world  
+    WHERE
+        capital LIKE concat(name, '%') 
+        AND capital != name;
+    
+    /*15*/  
+    
+    SELECT
+        name,
+        REPLACE (capital,
+        name,
+        '') AS ext   
+    FROM
+        world    
+    WHERE
+        capital LIKE concat(name, '%%') 
+        AND capital != name;
