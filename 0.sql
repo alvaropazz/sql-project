@@ -1,5 +1,4 @@
-    /* SELECT
-        basics */  
+/* SELECT basics */
     
     /*1*/  
     

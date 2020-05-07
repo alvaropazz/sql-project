@@ -1,5 +1,4 @@
-    /* SELECT
-        names */  
+/* SELECT names */
         
     /*1*/  
     
