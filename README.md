@@ -1,6 +1,6 @@
 # SQL PROJECT
 
-This respository contains the solutions to the [SQL Zoo](https://sqlzoo.net/wiki/SQL_Tutorial) excercies from 0 to 9, accesed on May the 6th, 2020, as part of Microverse's Technical Curriculum.
+This respository contains the solutions to the [SQL Zoo](https://sqlzoo.net/wiki/SQL_Tutorial) excercies from 0 to 9, accesed on May the 6th and the 7th, 2020, as part of Microverse's Technical Curriculum.
 
 ## Built With
 
